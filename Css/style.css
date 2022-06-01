@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "Raleway-SemiBold";
+    src:url(../Font/Raleway-SemiBold.ttf);
+}
+
+.bodyIndex, .bodySise{
+    font-family: "Raleway-SemiBold";
+}
+
+.border{
+    border: 1px solid black;
+}
+
+#gridIndex{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 1fr 125px;
+    grid-template-columns: 1fr 15%;
+    grid-template-areas: "headerFather headerFather headerFather"
+                         "mainIndex mainIndex asideIndex"
+                         "footerIndex footerIndex footerIndex";
+
+}
+
+#headerFather{
+    grid-area: headerFather;
+    background-color: #E71173;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+
+.searchBar{
+    border-radius: 7px 25px ;
+    background: white;
+    border: solid 1px black;
+    padding: 10px;
+    width: 180px;
+    height: 10px;
+}
+
+.searchIcon{
+    float: right;
+    width: 25px;
+}
+
+.nav__Links{
+    color:black;
+    padding: 0 .80rem ; 
+    margin: 0 -.25;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    text-decoration: none;
+    padding-right: 15px;
+    font-family: "Raleway-SemiBold";
+}
+
+.nav__Links:hover{
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 0 #2E0249;
+}
+
+.listNav{   
+    list-style: none;
+    display: flex;
+}
+
+.headerLogo__Img{
+    width: 160px;
+}
+
+#mainIndex{
+    padding: 1rem 1rem 1rem 1rem;
+    grid-area: mainIndex;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.mainImg{
+    padding-right: 1rem;
+}
+
+.mainContact{
+    flex: 20px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background: rgba( 28, 13, 13, 0 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.titleForm__1{
+    color: black;
+    font-size: 2.5rem;
+    padding-bottom: 0.8rem;
+    text-align: center;
+}
+
+.titleForm__2{
+    color: black;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+.text__1{
+    color: black;
+    padding-bottom: 0.5rem;
+}
+
+.buttonPr{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #E71173;
+    background: #E71173;
+}
+.buttonPr:hover {
+    background: #fff;
+    color: #16003B;
+}
+
+
+.formCont{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "name surnames"
+                         "mail number";
+    
+}
+
+.name input{
+    grid-area: name;
+    width: 50%;
+    padding: 10px 0;
+    font-size: 13px;
+    color: black;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.surnames input{
+    grid-area: surnames;
+    width: 50%;
+    padding: 10px 0;
+    font-size: 13px;
+    color: black;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.mail input{
+    grid-area: mail;
+    width: 50%;
+    padding: 10px 0;
+    font-size: 13px;
+    color: black;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.number input{
+    grid-area: number;
+    width: 50%;
+    padding: 10px 0;
+    font-size: 13px;
+    color: black;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+::placeholder{
+    color: black;
+}
+
+.prom{
+    padding-bottom:0.9rem ;
+}
+
+#asideIndex{
+    grid-area: asideIndex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.iconSocialNet{
+    width: 45px;
+    padding-bottom:4rem ;
+}
+
+#footerIndex{
+    grid-area: footerIndex;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#gridSise{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "headerFather headerFather"
+                         "mainSise asideSise";
+}
+
+#mainSise{
+    grid-area: mainSise;
+    display: flex;
+    background-image: url(../Images/Alumna.png)
+}
+
+
+#asideSise{
+    grid-area: asideSise;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginBox{
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    width: 400px;
+    padding: 40px;
+    background: rgba( 198, 20, 92, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.loginBox h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: black;
+    text-align: center;
+}
+  
+.loginBox .userBox {
+    position: relative;
+}
+  
+.loginBox .userBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.loginBox .userBox label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+  
+.loginBox .userBox input:focus ~ label,
+.loginBox .userBox input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: black;
+    font-size: 12px;
+}
+
+  
