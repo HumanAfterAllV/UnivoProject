@@ -5,78 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Univo</title>
-    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/main.css">
 </head>
 <body class="bodyIndex">
-    <div id="gridIndex">
-        <header id="headerFather">
-            <div class="headerLogo">
+    <section id="gridIndex">
+        <header id="headerIcon">
+            <div class="headerIcon__Img">
                 <a title="UnivoLogo" href="./Index.html"> <img class="headerLogo__Img" src="./Images/UnivoValle.png" alt="UnivoLogo"></a>
             </div>
+        </header>
+        <header id="headerFather">
             <nav class="headerNav">
                 <ul class="listNav">
-                    <li> <a class="nav__Links" href="./Pages/Oferta.html">Oferta Educativa</a></li>
+                    <li> <a class="nav__Links" href="./Pages/Oferta.html">Oferta Academica</a></li>
                     <li> <a class="nav__Links" href="./Pages/Nosotros.html">Nosotros</a></li>
-                    <li> <a class="nav__Links" href="./Pages/Relaciones.html">Relaciones</a></li>
+                    <li> <a class="nav__Links" href="./Pages/Vida.html">Vida Universitaria</a></li>
                     <li> <a class="nav__Links" href="./Pages/Contacto.html">Contacto</a></li>
                     <li> <a class="nav__Links" href="./Pages/Sise.html">Plataforma</a></li>
                 </ul>
             </nav>
-            <div class="search">
-                <input class="searchBar" type="search" id="searchUs" placeholder="¿Que deseas estudiar?" maxlength="20" autocomplete="off">
-                <input class="searchIcon" type="image" src="./Images/Icons/Icon-Search.png" title="button-search" alt="button-search" id="searchUs">
-            </div>
         </header>
         <main id="mainIndex">
-            <div class="mainIndexEslogan">
-                <h1 class="indexTitle">La oferta educativa mas amplia.</h1>
+            <div id="titleIndex">
+                <h2>Somos gente Univo</h2>
             </div>
-            <div class="mainContact">
-                <h1 class="titleForm__1">Gente Univo</h1>
-                <div class="titleForm">
-                    <h2 class="titleForm__2">En linea y presencial</h2>
-                </div>
-                <div class="textForm">
-                    <p class="text__1">
-                        Aprendre de profesionales de excelencia y expertos docentes, utilizando nuestra plataforma 
-                        de vanguardia.
-                    </p>
-                </div>
-                <div class="formIndex">
-                    <form class="Form" action="" method="get" enctype="text/plain">
-                        <fieldset>
-                            <section class="formCont">
-                                <div class="name">
-                                    <input type="text" name="userName" id="userName" placeholder="Nombre"
-                                           maxlength="15" autocomplete="off" required>
-                               </div>
-                               <div class="surnames">
-                                   <input type="text" name="userSurnames" id="userSurnames" placeholder="Apellido"
-                                          maxlength="35" autocomplete="off" required>
-                               </div>  
-                            
-                                <div class="mail">
-                                    <input type="email" name="userEmail" id="userEmail" placeholder="Email"
-                                           maxlength="40" autocomplete="off" required>
-                                </div>
-                                <div class="number">
-                                    <input type="" name="userNumber" id="userNumber" placeholder="Telefono" 
-                                           maxlength="10" size="10" pattern="[0-9]{10}" autocomplete="off" required>
-                                </div>
-                                <div class="prom">
-                                    <label for="userProm">Te gustaria recibir noticias</label>
-                                    <input type="checkbox" name="userProm" id="userProm" value>
-                                </div>
-                                <div class="Button">
-                                    <input class="buttonPr" type="submit" value="Enviar">
-                                </div>
-                            </section>
-                        </fieldset>
-                    </form>
-                </div>
+            <div id="textIndex">
+                <h2 class="textIndex__1">La mejor oferta educativa</h2>
+                <p class="textIndex__2"> 
+                    En Univo siempre contarás con los espacios idóneos para realizar cada actividad, no importa si es un experimento 
+                    en laboratorio, una sesión fotográfica o un entrenamiento de natación. 
+                </p>
+                <p class="textIndex__3">
+                    En cada uno de nuestros campus contamos con las 
+                    instalaciones de vanguardia para que puedas desarrollar cada práctica como debe ser.
+                </p>
+            </div>
+            <div id="imgIndex">
+                <img class="imgIndex__1" src="./Images/Universitarios.png" alt="Publicidad">
             </div>
         </main>
-        <aside id="asideIndex">
+        <aside id="asideFather">
             <div class="instaIcon">
                 <a href="https://www.instagram.com/grupounivo/"><img class="iconSocialNet" src="./Images/Icons/Insta.png" alt=""></a>
             </div class="faceIcon">
@@ -87,11 +55,11 @@
                 <a href=""><img class="iconSocialNet" src="./Images/Icons/Whatsapp.png" alt=""></a>
             </div>
         </aside>
-        <footer id="footerIndex">
-            <div class="footerText">
-                <p>Univo.edu.mx 2022-2023</p>
-            </div>
+        <footer id="footerFather">
+            <p class="footerText">VICENTE M. CORONA ENTRE PRIVADA CORONA Y AV. DE LOS CENSOS, COL. EL ESPINAL C.P. 94330 | ORIZABA, 
+                VERACRUZ, MÉXICO | TELS. (272) 726-14-36, 726-14-01 LADA: (800) 7189439 © INSTITUTO DE ESTUDIOS SUPERIORES DEL VALLE DE ORIZABA 2022
+            </p>
         </footer>
-    </div>
+    </section>
 </body>
 </html>
